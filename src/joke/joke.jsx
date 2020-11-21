@@ -1,19 +1,8 @@
 import './index.html';
 import React, { useState } from 'react';
-import { render } from 'react-dom';
-import { Joke } from './joke/joke.jsx';
-import './style.css';
+import './joke.css';
 
-
-const App = () => {
-  <Joke/>
-};
-
-render(<App /> , document.getElementById('app'));
-
-/*
-//ukol14//
-const App = () => {
+const Joke = () => {
 
   const [upLikes,setUpLikes] = useState(0);
   const [downLikes, setDownLikes] = useState(0);
@@ -49,5 +38,5 @@ const App = () => {
       </>
   )
 };
-*/ 
 
+export default Joke;
